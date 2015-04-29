@@ -27,10 +27,10 @@
   },
   "dependencies": {
     "react": ">=0.12.0",
-    "swipe-js-iso": "tilfab/Swipe"
+    "Swipe": "tilfab/Swipe"
   },
   "peerDependencies": {
     "react": ">=0.12.0",
-    "swipe-js-iso": "tilfab/Swipe"
+    "Swipe": "tilfab/Swipe"
   }
 }
