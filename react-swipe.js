@@ -47,7 +47,7 @@
 
     componentDidMount: function () {
       if (this.isMounted()) {
-        this.swipe = Swipe(this.getDOMNode(), this.props);
+        this.swipe = Swipe(React.findDOMNode(this), this.props);
       }
     },
 
@@ -65,7 +65,7 @@
     shouldComponentUpdate: function (nextProps) {
       return (
         (this.props.slideToIndex !== nextProps.slideToIndex) ||
-        (typeof this.props.shouldUpdate !== 'undefined') && !this.props.shouldUpdate(nextProps)
+        (typeof this.props.shouldUpdate !== 'undefined') && this.props.shouldUpdate(nextProps)
       );
     },
 

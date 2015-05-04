@@ -1,6 +1,6 @@
 {
   "name": "react-swipe",
-  "version": "2.0.9",
+  "version": "2.1.0",
   "description": "Brad Birdsall's Swipe.js, as a React component",
   "homepage": "https://github.com/jed/react-swipe",
   "keywords": [
@@ -23,10 +23,11 @@
   },
   "scripts": {
     "build": "uglifyjs react-swipe.js -cm -o react-swipe.min.js",
-    "build-dev": "browserify ./demo/index.js | uglifyjs -cm > ./demo/bundle.min.js"
+    "build-dev": "browserify ./demo/index.js | uglifyjs -cm > ./demo/bundle.min.js",
+    "prepublish": "npm run build"
   },
   "dependencies": {
-    "react": ">=0.12.0",
+    "react": "0.13.x",
     "Swipe": "tilfab/Swipe"
   }
 }
